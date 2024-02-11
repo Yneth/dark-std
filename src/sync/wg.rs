@@ -1,4 +1,5 @@
-use std::sync::atomic::{AtomicU64, Ordering};
+use std::sync::atomic::{Ordering};
+use atomic_shim::AtomicU64;
 use std::sync::Arc;
 
 /// WaitGroup impl use channel,it's also both support sync and async
